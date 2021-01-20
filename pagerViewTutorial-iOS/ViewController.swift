@@ -34,7 +34,7 @@ class ViewController: UIViewController,FSPagerViewDataSource,FSPagerViewDelegate
         }
     }
     
-    fileprivate let imageNames = ["1.png","2.png","3.png","4.png"]
+    fileprivate let imageNames = ["1.jpg","2.jpg","3.jpg","4.jpg"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +81,7 @@ class ViewController: UIViewController,FSPagerViewDataSource,FSPagerViewDelegate
     }
     //MARK: - FSPagerView delegate
     //수동으로 스와이프할때 pagercontrol 의 인덱스 변경
-    func pagerViewWillBeginDragging(_ pagerView: FSPagerView, targetIndex: Int){
+    func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int){
         self.myPagerControl.currentPage = targetIndex
     }
     //자동으로 스와이프할때 pagercontrol 의 인데스 변경
