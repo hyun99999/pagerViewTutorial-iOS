@@ -48,11 +48,22 @@ class ViewController: UIViewController,FSPagerViewDataSource,FSPagerViewDelegate
     //MARK: - IBAction
     @IBAction func onLeftBtnClicked(_ sender: UIButton) {
         print("ViewController - onLeftBtnClicked() called")
-        
+        self.myPagerControl.currentPage = self.myPagerControl.currentPage-1
+        //해당 인덱스로 화면이 변경
+        self.myPagerView.scrollToItem(at: self.myPagerControl.currentPage, animated: true)
+        //1에서 왼쪽버튼 한번더 누르면 4로 돌아감.
     }
     @IBAction func onRightBtnClicked(_ sender: UIButton) {
         print("ViewController - onRightBtnClicked() called")
         
+        //out of range error 해결
+        if self.myPagerControl.currentPage == self.imageNames.count-1 {
+            self.myPagerControl.currentPage = 0
+        } else {
+            self.myPagerControl.currentPage = self.myPagerControl.currentPage+1
+        }
+        //해당 인덱스로 화면이 변경
+        self.myPagerView.scrollToItem(at: self.myPagerControl.currentPage, animated: true)
     }
     //MARK: - FSPagerView datasource
     func numberOfItems(in pagerView: FSPagerView) -> Int {
