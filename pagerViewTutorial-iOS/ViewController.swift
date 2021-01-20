@@ -22,6 +22,7 @@ class ViewController: UIViewController,FSPagerViewDataSource,FSPagerViewDelegate
             self.myPagerView.isInfinite = true
             //자동스크롤 설정
             self.myPagerView.automaticSlidingInterval = 3.0
+            self.myPagerView.transformer = FSPagerViewTransformer(type: .overlap)
             }
     }
     
