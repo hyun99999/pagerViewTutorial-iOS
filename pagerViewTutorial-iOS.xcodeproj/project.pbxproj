@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B9458A083C6CD578154CC63 /* Pods_pagerViewTutorial_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA580F9A502C703548F1A05 /* Pods_pagerViewTutorial_iOS.framework */; };
 		F842F91825B7B147009ED8B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842F91725B7B147009ED8B9 /* AppDelegate.swift */; };
 		F842F91A25B7B147009ED8B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842F91925B7B147009ED8B9 /* SceneDelegate.swift */; };
 		F842F91C25B7B147009ED8B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842F91B25B7B147009ED8B9 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CA580F9A502C703548F1A05 /* Pods_pagerViewTutorial_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pagerViewTutorial_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13903C8B2E4C7E81982231EC /* Pods-pagerViewTutorial-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerViewTutorial-iOS.release.xcconfig"; path = "Target Support Files/Pods-pagerViewTutorial-iOS/Pods-pagerViewTutorial-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		45A80C08257CC5587A8DAE9C /* Pods-pagerViewTutorial-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerViewTutorial-iOS.debug.xcconfig"; path = "Target Support Files/Pods-pagerViewTutorial-iOS/Pods-pagerViewTutorial-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F842F91425B7B147009ED8B9 /* pagerViewTutorial-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pagerViewTutorial-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F842F91725B7B147009ED8B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F842F91925B7B147009ED8B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9458A083C6CD578154CC63 /* Pods_pagerViewTutorial_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3377E6D8C087BF033BD91A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CA580F9A502C703548F1A05 /* Pods_pagerViewTutorial_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34B59D5C63CF82BB0A5276DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45A80C08257CC5587A8DAE9C /* Pods-pagerViewTutorial-iOS.debug.xcconfig */,
+				13903C8B2E4C7E81982231EC /* Pods-pagerViewTutorial-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F842F90B25B7B147009ED8B9 = {
 			isa = PBXGroup;
 			children = (
 				F842F91625B7B147009ED8B9 /* pagerViewTutorial-iOS */,
 				F842F91525B7B147009ED8B9 /* Products */,
+				34B59D5C63CF82BB0A5276DF /* Pods */,
+				3377E6D8C087BF033BD91A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F842F92825B7B14C009ED8B9 /* Build configuration list for PBXNativeTarget "pagerViewTutorial-iOS" */;
 			buildPhases = (
+				F8D311E10B8A3EAD18D10D1E /* [CP] Check Pods Manifest.lock */,
 				F842F91025B7B147009ED8B9 /* Sources */,
 				F842F91125B7B147009ED8B9 /* Frameworks */,
 				F842F91225B7B147009ED8B9 /* Resources */,
+				7B9965E8D59F2B0B160BE587 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B9965E8D59F2B0B160BE587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerViewTutorial-iOS/Pods-pagerViewTutorial-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerViewTutorial-iOS/Pods-pagerViewTutorial-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pagerViewTutorial-iOS/Pods-pagerViewTutorial-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D311E10B8A3EAD18D10D1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pagerViewTutorial-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F842F91025B7B147009ED8B9 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		F842F92925B7B14C009ED8B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A80C08257CC5587A8DAE9C /* Pods-pagerViewTutorial-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +373,7 @@
 		};
 		F842F92A25B7B14C009ED8B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13903C8B2E4C7E81982231EC /* Pods-pagerViewTutorial-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
