@@ -21,7 +21,6 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPU-S0-aA5" userLabel="PageView" customClass="FSPagerView" customModule="FSPagerView">
                                         <rect key="frame" x="0.0" y="259" width="414" height="300"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="mdR-B9-EqN"/>
                                         </constraints>
@@ -52,6 +51,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="onLeftBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4X0-ko-kI6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-mT-75J">
                                 <rect key="frame" x="354" y="433" width="30" height="30"/>
@@ -62,6 +64,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="onRightBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5B-4P-C9o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,8 +83,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="leftBtn" destination="LtA-ix-HSL" id="sqC-fW-PQq"/>
                         <outlet property="myPagerControl" destination="e3v-o0-115" id="yur-PM-3lq"/>
                         <outlet property="myPagerView" destination="ZPU-S0-aA5" id="bSS-OB-R5X"/>
+                        <outlet property="rightBtn" destination="SoB-mT-75J" id="fYg-YV-vUW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,8 +56,15 @@
 				45A80C08257CC5587A8DAE9C /* Pods-pagerViewTutorial-iOS.debug.xcconfig */,
 				13903C8B2E4C7E81982231EC /* Pods-pagerViewTutorial-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F82FBB0C25B7D37200B54178 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F842F92025B7B14C009ED8B9 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F842F90B25B7B147009ED8B9 = {
@@ -81,11 +88,11 @@
 		F842F91625B7B147009ED8B9 /* pagerViewTutorial-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F82FBB0C25B7D37200B54178 /* Resources */,
 				F842F91725B7B147009ED8B9 /* AppDelegate.swift */,
 				F842F91925B7B147009ED8B9 /* SceneDelegate.swift */,
 				F842F91B25B7B147009ED8B9 /* ViewController.swift */,
 				F842F91D25B7B147009ED8B9 /* Main.storyboard */,
-				F842F92025B7B14C009ED8B9 /* Assets.xcassets */,
 				F842F92225B7B14C009ED8B9 /* LaunchScreen.storyboard */,
 				F842F92525B7B14C009ED8B9 /* Info.plist */,
 			);
